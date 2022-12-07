@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Style</title>
+    <!----------------SEO---------------->
+    <meta name="autor" content="Kevin Corredor">
+    <meta name="keywords" content="Barberia,Barberia Bogotá,Urban Style">
+    <meta name="description" content="Barberia Urban Style">
+
+    <!--------------favicon-------------->
+    <link rel="shortcut icon" href="Imagenes/logo-mini.ico">
+    <!-- link css bootstrap -->
+    <link rel="stylesheet" href="bootstrap-5.2.0-dist/css/bootstrap.min.css">
+    <!-------------Link css------------->
+    <link rel="stylesheet" href="css/Reservas.css">
+    <!--------------fuentes-------------->
+    <link href="https://fonts.cdnfonts.com/css/made-sunflower" rel="stylesheet">
+    <!---------------iconos--------------->
+    <script src="https://kit.fontawesome.com/ec366a1c2b.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <!----------------barra nav---------------->
+
+    <nav class="navbar navbar-expand-xl " style="position:fixed; z-index: 9999999; width: 100%; ">
+        <div class="container-fluid ">
+            <div class="marco ms-2 ">
+                <a href="index.html"> <img src="Imagenes/Logo Urban.png" href="#slider" style="width: 70px;"></a>
+            </div>
+            <button class="navbar-toggler but" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon navbar-dark"></span>
+      </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white fs-5" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-white fs-5" aria-current="page" href="index.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-white fs-5" aria-current="page" href="index.html">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-white fs-5" aria-current="page" href="index.html">Barberos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-white fs-5" aria-current="page" href="index.html">Ubicación</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Haeder -->
+
+    <section id="hed" class="container-fluid">
+
+        <div class="row">
+            <img src="imagenes/men_2.jpg" style="padding: 0;" alt="">
+            <div class="p1">
+                <p class="text-center text-white fs-1">¡Únete al Estilo Urbano! <br>
+                    <hr>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!--------------------Reservas--------------------->
+
+    <section class="container" id="reservas">
+        <div class="row">
+            <div class="col-12 row res">
+                <h2 class="py-5 col-12 text-center">Cabello
+                    <hr class="mx-auto mb-2" width="15%">
+                </h2>
+                <article class="col-xl-3 col-lg-6 col-md-12">
+                    <h4 class="text-center">Corte de Cabello</h4>
+                    <p><strong>Precio: $10.000</strong> <br> Cortamos y peinamos tu cabello muy detalladamente, en la parte del corte se utiliza la maquina dependiendo del corte ya que contamos con una gran variedad de maquinas.</p>
+
+                    <!-------------------modal------------------->
+                    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="titu modal-header">
+                                    <h1 class="modal-title fs-4 text-white" style="font-family: 'MADE Sunflower', sans-serif;" id="exampleModalToggleLabel">Reservando Corte de cabello</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <!-- form -->
+                                <div class="bod modal-body">
+                                    <form id="nombre_de_formulario">
+                                        <input type="hidden" value="Corte de cabello" name="uno" class="w-100">
+
+                                        <label class="mt-3 fs-5" style="font-family: 'EB Garamond', serif;"><strong>Nombre y Apellido</strong></label>
+                                        <input type="text" required placeholder="Kevin Corredor" name="dos" class="w-100">
+
+                                        <label class="mt-3 fs-5" style="font-family: 'EB Garamond', serif;"><strong>Telefono de contacto</strong></label>
+                                        <input type="text" required placeholder="3012239913" name="tres" class="w-100">
+
+
+                                        <label class="mt-3 fs-5" style="font-family: 'EB Garamond', serif;"><strong>Fecha</strong></label>
+
+                                        <label class="fs-5" style="font-family: 'EB Garamond', serif; margin-left: 145px;"><strong>Hora</strong></label>
+                                        <br>
+                                        <select name="cuatro" id="" class="w-30">
+                                            <option value="00">--</option>
+                                            <option value="01">01</option>
+                                            <option value="02">02</option>
+                                            <option value="03">03</option>
+                                            <option value="04">04</option>
+                                            <option value="05">05</option>
+                                            <option value="06">06</option>
+                                            <option value="07">07</option>
+                                            <option value="08">08</option>
+                                            <option value="09">09</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+                                            <option value="12">12</option>
+                                            <option value="13">13</option>
+                                            <option value="14">14</option>
+                                            <option value="15">15</option>
+                                            <option value="16">16</option>
+                                            <option value="17">17</option>
+                                            <option value="18">18</option>
+                                            <option value="19">19</option>
+                                            <option value="20">20</option>
+                                            <option value="21">21</option>
+                                            <option value="22">22</option>
+                                            <option value="23">23</option>
+                                            <option value="24">24</option>
+                                            <option value="25">25</option>
+                                            <option value="26">26</option>
+                                            <option value="27">27</option>
+                                            <option value="28">28</option>
+                                            <option value="29">29</option>
+                                            <option value="30">30</option>
+                                            <option value="31">31</option>
+                                        </select>
+
+                                        <select name="cinco" id="" class="w-30">
+                                            <option value="00">--</option>
+                                            <option value="Ene">Ene</option>
+                                            <option value="Feb">Feb</option>
+                                            <option value="Mar">Mar</option>
+                                            <option value="Abr">Abr</option>
+                                            <option value="May">May</option>
+                                            <option value="Jun">Jun</option>
+                                            <option value="Jul">Jul</option>
+                                            <option value="Ago">Ago</option>
+                                            <option value="Sep">Sep</option>
+                                            <option value="Oct">Oct</option>
+                                            <option value="Nov">Nov</option>
+                                            <option value="Dic">Dic</option>
+                                        </select>
+
+                                        <select name="seis" id="" class="w-30">
+                                            <option value="00">--</option>
+                                            <option value="2022">2022</option>
+                                            <option value="2023">2023</option>
+                                            <option value="2024">2024</option>
+                                            <option value="2025">2025</option>
+                                            <option value="2026">2026</option>
+                                        </select>
+
+                                        <select name="siete" id="" class="ms-4 w-30">
+                                            <option value="00">--</option>
+                                            <option value="9:00am">9:00am</option>
+                                            <option value="10:00am">10:00am</option>
+                                            <option value="11:00am">11:00am</option>
+                                            <option value="12:00pm">12:00pm</option>
+                                            <option value="1:00pm">1:00pm</option>
+                                            <option value="2:00pm">2:00pm</option>
+                                            <option value="3:00pm">3:00pm</option>
+                                            <option value="4:00pm">4:00pm</option>
+                                            <option value="5:00pm">5:00pm</option>
+                                            <option value="6:00pm">6:00pm</option>
+                                            <option value="7:00pm">7:00pm</option>
+                                            <option value="8:00pm">8:00pm</option>
+                                            <option value="9:00pm">9:00pm</option>
+                                        </select>
+
+                                        <br>
+
+                                        <label name="ocho" class="mt-4 w-100 fs-5 pb-4" style="font-family: 'EB Garamond', serif;"> <strong>Presio a pagar $ 10.000</strong></label>
+
+                                    </form>
+
+
+                                </div>
+                                <div class=" fut modal-footer">
+                                    <button type="button" class="bot p-2 fs-5 text-white " onclick="add('nombre_de_formulario')">ENVIAR!</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a class="but p-2 text-white " data-bs-toggle="modal" href="#exampleModalToggle" role="button">RESERVAR</a>
+                </article>
+
+                <!-------------------------------------------------------------rapado------------------------------------------------------------->
+                <article class="col-xl-3 col-lg-6 col-md-12">
+                    <h4 class="text-center">Rapado</h4>
+                    <p class="pb-4"> <strong>Precio: $8.000</strong> <br> Pasamos una rasuradora por toda la cabeza o si bien lo prefiere el cliente con cuchilla a la vieja escuela y despues se hace un lavado de cabeza.</p>
+
+                    <!-------------------modal------------------->
+                    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabe2" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="titu modal-header">
+                                    <h1 class="modal-title fs-4 text-white" style="font-family: 'MADE Sunflower', sans-serif;" id="exampleModalToggleLabe2">Reservando Rapado</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+
+                                <!-- form -->
+                                <div class="bod modal-body">
+                                    <form id="formulario_rapado">
+                                        <input type="hidden" value="Rapado" name="uno" class="w-100">
+
+                                        <label class="mt-3 fs-5" style="font-family: 'EB Garamond', serif;"><strong>Nombre y Apellido</strong></label>
+                                        <input type="text" required placeholder="Kevin Corredor" name="dos" class="w-100">
+
+                                        <label class="mt-3 fs-5" style="font-family: 'EB Garamond', serif;"><strong>Telefono de contacto</strong></label>
+                                        <input type="text" required placeholder="3012239913" name="tres" class="w-100">
+
+
+                                        <label class="mt-3 fs-5" style="font-family: 'EB Garamond', serif;"><strong>Fecha</strong></label>
+
+                                        <label class="fs-5" style="font-family: 'EB Garamond', serif; margin-left: 145px;"><strong>Hora</strong></label>
+                                        <br>
+                                        <select name="cuatro" id="" class="w-30">
+                                <option value="00">--</option>
+                                <option value="01">01</option>
+                                <option value="02">02</option>
+                                <option value="03">03</option>
+                                <option value="04">04</option>
+                                <option value="05">05</option>
+                                <option value="06">06</option>
+                                <option value="07">07</option>
+                                <option value="08">08</option>
+                                <option value="09">09</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                                <option value="30">30</option>
+                                <option value="31">31</option>
+                            </select>
+
+                                        <select name="cinco" id="" class="w-30">
+                                <option value="00">--</option>
+                                <option value="Ene">Ene</option>
+                                <option value="Feb">Feb</option>
+                                <option value="Mar">Mar</option>
+                                <option value="Abr">Abr</option>
+                                <option value="May">May</option>
+                                <option value="Jun">Jun</option>
+                                <option value="Jul">Jul</option>
+                                <option value="Ago">Ago</option>
+                                <option value="Sep">Sep</option>
+                                <option value="Oct">Oct</option>
+                                <option value="Nov">Nov</option>
+                                <option value="Dic">Dic</option>
+                            </select>
+
+                                        <select name="seis" id="" class="w-30">
+                                <option value="00">--</option>
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
+                                <option value="2024">2024</option>
+                                <option value="2025">2025</option>
+                                <option value="2026">2026</option>
+                            </select>
+
+                                        <select name="siete" id="" class="ms-4 w-30">
+                                <option value="00">--</option>
+                                <option value="9:00am">9:00am</option>
+                                <option value="10:00am">10:00am</option>
+                                <option value="11:00am">11:00am</option>
+                                <option value="12:00pm">12:00pm</option>
+                                <option value="1:00pm">1:00pm</option>
+                                <option value="2:00pm">2:00pm</option>
+                                <option value="3:00pm">3:00pm</option>
+                                <option value="4:00pm">4:00pm</option>
+                                <option value="5:00pm">5:00pm</option>
+                                <option value="6:00pm">6:00pm</option>
+                                <option value="7:00pm">7:00pm</option>
+                                <option value="8:00pm">8:00pm</option>
+                                <option value="9:00pm">9:00pm</option>
+                            </select>
+
+                                        <br>
+
+                                        <label name="ocho" class="mt-4 w-100 fs-5 pb-4" style="font-family: 'EB Garamond', serif;"> <strong>Presio a pagar $ 8.000</strong></label>
+
+                                    </form>
+
+
+                                </div>
+                                <div class=" fut modal-footer">
+                                    <button type="button" class="bot p-2 fs-5 text-white " onclick="add('formulario_rapado')">ENVIAR!</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a class="but p-2 text-white " data-bs-toggle="modal" href="#exampleModalToggle2" role="button">RESERVAR</a>
+                </article>
+                <!-- Decoloracion -->
+                <article class="col-xl-3 col-lg-6 col-md-12">
+                    <h4 class="text-center">Decoloracion</h4>
+                    <p class="pb-4"><strong>Precio: $40.000</strong> <br>Se hace la preparacion del decolorante y se aplica cuidadosamente en el cabello despues del tiempo de espera realizamos un lavado de cabello.</p>
+
+                    <!-------------------modal------------------->
+                    <div class="modal fade" id="exampleModalToggle3" aria-hidden="true" aria-labelledby="exampleModalToggleLabe3" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="titu modal-header">
+                                    <h1 class="modal-title fs-4 text-white" style="font-family: 'MADE Sunflower', sans-serif;" id="exampleModalToggleLabe3">Reservando Decoloracion</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+
+                                <!-- form -->
+                                <div class="bod modal-body">
+                                    <form id="formulario_decoloracion">
+                                        <input type="hidden" value="Decoloracion" name="uno" class="w-100">
+
+                                        <label class="mt-3 fs-5" style="font-family: 'EB Garamond', serif;"><strong>Nombre y Apellido</strong></label>
+                                        <input type="text" required placeholder="Kevin Corredor" name="dos" class="w-100">
+
+                                        <label class="mt-3 fs-5" style="font-family: 'EB Garamond', serif;"><strong>Telefono de contacto</strong></label>
+                                        <input type="text" required placeholder="3012239913" name="tres" class="w-100">
+
+
+                                        <label class="mt-3 fs-5" style="font-family: 'EB Garamond', serif;"><strong>Fecha</strong></label>
+
+                                        <label class="fs-5" style="font-family: 'EB Garamond', serif; margin-left: 145px;"><strong>Hora</strong></label>
+                                        <br>
+                                        <select name="cuatro" id="" class="w-30">
+                                <option value="00">--</option>
+                                <option value="01">01</option>
+                                <option value="02">02</option>
+                                <option value="03">03</option>
+                                <option value="04">04</option>
+                                <option value="05">05</option>
+                                <option value="06">06</option>
+                                <option value="07">07</option>
+                                <option value="08">08</option>
+                                <option value="09">09</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                                <option value="30">30</option>
+                                <option value="31">31</option>
+                            </select>
+
+                                        <select name="cinco" id="" class="w-30">
+                                <option value="00">--</option>
+                                <option value="Ene">Ene</option>
+                                <option value="Feb">Feb</option>
+                                <option value="Mar">Mar</option>
+                                <option value="Abr">Abr</option>
+                                <option value="May">May</option>
+                                <option value="Jun">Jun</option>
+                                <option value="Jul">Jul</option>
+                                <option value="Ago">Ago</option>
+                                <option value="Sep">Sep</option>
+                                <option value="Oct">Oct</option>
+                                <option value="Nov">Nov</option>
+                                <option value="Dic">Dic</option>
+                            </select>
+
+                                        <select name="seis" id="" class="w-30">
+                                <option value="00">--</option>
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
+                                <option value="2024">2024</option>
+                                <option value="2025">2025</option>
+                                <option value="2026">2026</option>
+                            </select>
+
+                                        <select name="siete" id="" class="ms-4 w-30">
+                                <option value="00">--</option>
+                                <option value="9:00am">9:00am</option>
+                                <option value="10:00am">10:00am</option>
+                                <option value="11:00am">11:00am</option>
+                                <option value="12:00pm">12:00pm</option>
+                                <option value="1:00pm">1:00pm</option>
+                                <option value="2:00pm">2:00pm</option>
+                                <option value="3:00pm">3:00pm</option>
+                                <option value="4:00pm">4:00pm</option>
+                                <option value="5:00pm">5:00pm</option>
+                                <option value="6:00pm">6:00pm</option>
+                                <option value="7:00pm">7:00pm</option>
+                                <option value="8:00pm">8:00pm</option>
+                                <option value="9:00pm">9:00pm</option>
+                            </select>
+
+                                        <br>
+
+                                        <label name="ocho" class="mt-4 w-100 fs-5 pb-4" style="font-family: 'EB Garamond', serif;"> <strong>Presio a pagar $ 40.000</strong></label>
+
+                                    </form>
+
+
+                                </div>
+                                <div class=" fut modal-footer">
+                                    <button type="button" class="bot p-2 fs-5 text-white " onclick="add('formulario_decoloracion')">ENVIAR!</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a class="but p-2 text-white " data-bs-toggle="modal" href="#exampleModalToggle3" role="button">RESERVAR</a>
+                </article>
+                <!-- Tintura -->
+                <article class="col-xl-3 col-lg-6 col-md-12">
+                    <h4 class="text-center">Tintura</h4>
+                    <p><strong>Precio: $80.000</strong> <br> Se hace la preparacion del decolorante y se aplica cuidadosamente en el cabello despues del tiempo de espera se aplicara el tinte del color elejido por el cliente y despues se realiza el lavado
+                        de cabello.</p>
+
+                    <!-------------------modal------------------->
+                    <div class="modal fade" id="exampleModalToggle4" aria-hidden="true" aria-labelledby="exampleModalToggleLabe4" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="titu modal-header">
+                                    <h1 class="modal-title fs-4 text-white" style="font-family: 'MADE Sunflower', sans-serif;" id="exampleModalToggleLabe4">Reservando Tintura</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+
+                                <!-- form -->
+                                <div class="bod modal-body">
+                                    <form id="formulario_tintura">
+                                        <input type="hidden" value="Tintura" name="uno" class="w-100">
+
+                                        <label class="mt-3 fs-5" style="font-family: 'EB Garamond', serif;"><strong>Nombre y Apellido</strong></label>
+                                        <input type="text" required placeholder="Kevin Corredor" name="dos" class="w-100">
+
+                                        <label class="mt-3 fs-5" style="font-family: 'EB Garamond', serif;"><strong>Telefono de contacto</strong></label>
+                                        <input type="text" required placeholder="3012239913" name="tres" class="w-100">
+
+
+                                        <label class="mt-3 fs-5" style="font-family: 'EB Garamond', serif;"><strong>Fecha</strong></label>
+
+                                        <label class="fs-5" style="font-family: 'EB Garamond', serif; margin-left: 145px;"><strong>Hora</strong></label>
+                                        <br>
+                                        <select name="cuatro" id="" class="w-30">
+                                <option value="00">--</option>
+                                <option value="01">01</option>
+                                <option value="02">02</option>
+                                <option value="03">03</option>
+                                <option value="04">04</option>
+                                <option value="05">05</option>
+                                <option value="06">06</option>
+                                <option value="07">07</option>
+                                <option value="08">08</option>
+                                <option value="09">09</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                                <option value="30">30</option>
+                                <option value="31">31</option>
+                            </select>
+
+                                        <select name="cinco" id="" class="w-30">
+                                <option value="00">--</option>
+                                <option value="Ene">Ene</option>
+                                <option value="Feb">Feb</option>
+                                <option value="Mar">Mar</option>
+                                <option value="Abr">Abr</option>
+                                <option value="May">May</option>
+                                <option value="Jun">Jun</option>
+                                <option value="Jul">Jul</option>
+                                <option value="Ago">Ago</option>
+                                <option value="Sep">Sep</option>
+                                <option value="Oct">Oct</option>
+                                <option value="Nov">Nov</option>
+                                <option value="Dic">Dic</option>
+                            </select>
+
+                                        <select name="seis" id="" class="w-30">
+                                <option value="00">--</option>
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
+                                <option value="2024">2024</option>
+                                <option value="2025">2025</option>
+                                <option value="2026">2026</option>
+                            </select>
+
+                                        <select name="siete" id="" class="ms-4 w-30">
+                                <option value="00">--</option>
+                                <option value="9:00am">9:00am</option>
+                                <option value="10:00am">10:00am</option>
+                                <option value="11:00am">11:00am</option>
+                                <option value="12:00pm">12:00pm</option>
+                                <option value="1:00pm">1:00pm</option>
+                                <option value="2:00pm">2:00pm</option>
+                                <option value="3:00pm">3:00pm</option>
+                                <option value="4:00pm">4:00pm</option>
+                                <option value="5:00pm">5:00pm</option>
+                                <option value="6:00pm">6:00pm</option>
+                                <option value="7:00pm">7:00pm</option>
+                                <option value="8:00pm">8:00pm</option>
+                                <option value="9:00pm">9:00pm</option>
+                            </select>
+
+                                        <br>
+
+                                        <label name="ocho" class="mt-4 w-100 fs-5 pb-4" style="font-family: 'EB Garamond', serif;"> <strong>Presio a pagar $ 80.000</strong></label>
+
+                                    </form>
+
+
+                                </div>
+                                <div class=" fut modal-footer">
+                                    <button type="button" class="bot p-2 fs-5 text-white " onclick="add('formulario_tintura')">ENVIAR!</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a class="but p-2 text-white " data-bs-toggle="modal" href="#exampleModalToggle4" role="button">RESERVAR</a>
+                </article>
+            </div>
+
+            <!-------------------------RESERVA DE BARBA------------------------->
+            <div class="col-12 row res">
+                <h2 class="py-5 col-12 text-center">Barba
+                    <hr class="mx-auto mb-2" width="15%">
+                </h2>
+                <article class="col-xl-3 col-lg-6 col-md-12">
+                    <h4 class="text-center">Corte de Barba</h4>
+                    <p><strong>Precio: $15.000</strong> <br> Cortamos y perfilamos tu barba con las diferentes maquinas de rasusrar o si bien lo prefieres con cuchilla a la vieja escuela.</p>
+
+                    <!-------------------modal------------------->
+                    <div class="modal fade" id="exampleModalToggle5" aria-hidden="true" aria-labelledby="exampleModalToggleLabel5" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="titu modal-header">
+                                    <h1 class="modal-title fs-4 text-white" style="font-family: 'MADE Sunflower', sans-serif;" id="exampleModalToggleLabel5">Reservando Corte de Barba</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <!-- form -->
+                                <div class="bod modal-body">
+                                    <form id="formulario_barba">
+                                        <input type="hidden" value="Barba" name="uno" class="w-100">
+
+                                        <label class="mt-3 fs-5" style="font-family: 'EB Garamond', serif;"><strong>Nombre y Apellido</strong></label>
+                                        <input type="text" required placeholder="Kevin Corredor" name="dos" class="w-100">
+
+                                        <label class="mt-3 fs-5" style="font-family: 'EB Garamond', serif;"><strong>Telefono de contacto</strong></label>
+                                        <input type="text" required placeholder="3012239913" name="tres" class="w-100">
+
+
+                                        <label class="mt-3 fs-5" style="font-family: 'EB Garamond', serif;"><strong>Fecha</strong></label>
+
+                                        <label class="fs-5" style="font-family: 'EB Garamond', serif; margin-left: 145px;"><strong>Hora</strong></label>
+                                        <br>
+                                        <select name="cuatro" id="" class="w-30">
+                                            <option value="00">--</option>
+                                            <option value="01">01</option>
+                                            <option value="02">02</option>
+                                            <option value="03">03</option>
+                                            <option value="04">04</option>
+                                            <option value="05">05</option>
+                                            <option value="06">06</option>
+                                            <option value="07">07</option>
+                                            <option value="08">08</option>
+                                            <option value="09">09</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+                                            <option value="12">12</option>
+                                            <option value="13">13</option>
+                                            <option value="14">14</option>
+                                            <option value="15">15</option>
+                                            <option value="16">16</option>
+                                            <option value="17">17</option>
+                                            <option value="18">18</option>
+                                            <option value="19">19</option>
+                                            <option value="20">20</option>
+                                            <option value="21">21</option>
+                                            <option value="22">22</option>
+                                            <option value="23">23</option>
+                                            <option value="24">24</option>
+                                            <option value="25">25</option>
+                                            <option value="26">26</option>
+                                            <option value="27">27</option>
+                                            <option value="28">28</option>
+                                            <option value="29">29</option>
+                                            <option value="30">30</option>
+                                            <option value="31">31</option>
+                                        </select>
+
+                                        <select name="cinco" id="" class="w-30">
+                                            <option value="00">--</option>
+                                            <option value="Ene">Ene</option>
+                                            <option value="Feb">Feb</option>
+                                            <option value="Mar">Mar</option>
+                                            <option value="Abr">Abr</option>
+                                            <option value="May">May</option>
+                                            <option value="Jun">Jun</option>
+                                            <option value="Jul">Jul</option>
+                                            <option value="Ago">Ago</option>
+                                            <option value="Sep">Sep</option>
+                                            <option value="Oct">Oct</option>
+                                            <option value="Nov">Nov</option>
+                                            <option value="Dic">Dic</option>
+                                        </select>
+
+                                        <select name="seis" id="" class="w-30">
+                                            <option value="00">--</option>
+                                            <option value="2022">2022</option>
+                                            <option value="2023">2023</option>
+                                            <option value="2024">2024</option>
+                                            <option value="2025">2025</option>
+                                            <option value="2026">2026</option>
+                                        </select>
+
+                                        <select name="siete" id="" class="ms-4 w-30">
+                                            <option value="00">--</option>
+                                            <option value="9:00am">9:00am</option>
+                                            <option value="10:00am">10:00am</option>
+                                            <option value="11:00am">11:00am</option>
+                                            <option value="12:00pm">12:00pm</option>
+                                            <option value="1:00pm">1:00pm</option>
+                                            <option value="2:00pm">2:00pm</option>
+                                            <option value="3:00pm">3:00pm</option>
+                                            <option value="4:00pm">4:00pm</option>
+                                            <option value="5:00pm">5:00pm</option>
+                                            <option value="6:00pm">6:00pm</option>
+                                            <option value="7:00pm">7:00pm</option>
+                                            <option value="8:00pm">8:00pm</option>
+                                            <option value="9:00pm">9:00pm</option>
+                                        </select>
+
+                                        <br>
+
+                                        <label name="ocho" class="mt-4 w-100 fs-5 pb-4" style="font-family: 'EB Garamond', serif;"> <strong>Presio a pagar $ 15.000</strong></label>
+
+                                    </form>
+
+
+                                </div>
+                                <div class=" fut modal-footer">
+                                    <button type="button" class="bot p-2 fs-5 text-white " onclick="add('formulario_barba')">ENVIAR!</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a class="but p-2 text-white " data-bs-toggle="modal" href="#exampleModalToggle5" role="button">RESERVAR</a>
+                </article>
+            </div>
+            <!--------------------Reservas Limpieza facial--------------------->
+            <div class="col-12 row res">
+                <h2 class="py-5 col-12 text-center">Limpieza Facial
+                    <hr class="mx-auto mb-2" width="15%">
+                </h2>
+                <article class="col-xl-3 col-lg-6 col-md-12">
+                    <h4 class="text-center">Limpieza Facial</h4>
+                    <p><strong>Precio: $25.000</strong> <br> Exfoleamos tu cara para retirar la piel muerta y despues agregamos una mascarilla para puntos negros, despues se hace un lavado de cara.</p>
+
+                    <!-------------------modal------------------->
+                    <div class="modal fade" id="exampleModalToggle6" aria-hidden="true" aria-labelledby="exampleModalToggleLabel6" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="titu modal-header">
+                                    <h1 class="modal-title fs-4 text-white" style="font-family: 'MADE Sunflower', sans-serif;" id="exampleModalToggleLabel6">Reservando Limpieza Facial</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <!-- form -->
+                                <div class="bod modal-body">
+                                    <form id="formulario_limpieza">
+                                        <input type="hidden" value="Limpieza Facial" name="uno" class="w-100">
+
+                                        <label class="mt-3 fs-5" style="font-family: 'EB Garamond', serif;"><strong>Nombre y Apellido</strong></label>
+                                        <input type="text" required placeholder="Kevin Corredor" name="dos" class="w-100">
+
+                                        <label class="mt-3 fs-5" style="font-family: 'EB Garamond', serif;"><strong>Telefono de contacto</strong></label>
+                                        <input type="text" required placeholder="3012239913" name="tres" class="w-100">
+
+
+                                        <label class="mt-3 fs-5" style="font-family: 'EB Garamond', serif;"><strong>Fecha</strong></label>
+
+                                        <label class="fs-5" style="font-family: 'EB Garamond', serif; margin-left: 145px;"><strong>Hora</strong></label>
+                                        <br>
+                                        <select name="cuatro" id="" class="w-30">
+                                            <option value="00">--</option>
+                                            <option value="01">01</option>
+                                            <option value="02">02</option>
+                                            <option value="03">03</option>
+                                            <option value="04">04</option>
+                                            <option value="05">05</option>
+                                            <option value="06">06</option>
+                                            <option value="07">07</option>
+                                            <option value="08">08</option>
+                                            <option value="09">09</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+                                            <option value="12">12</option>
+                                            <option value="13">13</option>
+                                            <option value="14">14</option>
+                                            <option value="15">15</option>
+                                            <option value="16">16</option>
+                                            <option value="17">17</option>
+                                            <option value="18">18</option>
+                                            <option value="19">19</option>
+                                            <option value="20">20</option>
+                                            <option value="21">21</option>
+                                            <option value="22">22</option>
+                                            <option value="23">23</option>
+                                            <option value="24">24</option>
+                                            <option value="25">25</option>
+                                            <option value="26">26</option>
+                                            <option value="27">27</option>
+                                            <option value="28">28</option>
+                                            <option value="29">29</option>
+                                            <option value="30">30</option>
+                                            <option value="31">31</option>
+                                        </select>
+
+                                        <select name="cinco" id="" class="w-30">
+                                            <option value="00">--</option>
+                                            <option value="Ene">Ene</option>
+                                            <option value="Feb">Feb</option>
+                                            <option value="Mar">Mar</option>
+                                            <option value="Abr">Abr</option>
+                                            <option value="May">May</option>
+                                            <option value="Jun">Jun</option>
+                                            <option value="Jul">Jul</option>
+                                            <option value="Ago">Ago</option>
+                                            <option value="Sep">Sep</option>
+                                            <option value="Oct">Oct</option>
+                                            <option value="Nov">Nov</option>
+                                            <option value="Dic">Dic</option>
+                                        </select>
+
+                                        <select name="seis" id="" class="w-30">
+                                            <option value="00">--</option>
+                                            <option value="2022">2022</option>
+                                            <option value="2023">2023</option>
+                                            <option value="2024">2024</option>
+                                            <option value="2025">2025</option>
+                                            <option value="2026">2026</option>
+                                        </select>
+
+                                        <select name="siete" id="" class="ms-4 w-30">
+                                            <option value="00">--</option>
+                                            <option value="9:00am">9:00am</option>
+                                            <option value="10:00am">10:00am</option>
+                                            <option value="11:00am">11:00am</option>
+                                            <option value="12:00pm">12:00pm</option>
+                                            <option value="1:00pm">1:00pm</option>
+                                            <option value="2:00pm">2:00pm</option>
+                                            <option value="3:00pm">3:00pm</option>
+                                            <option value="4:00pm">4:00pm</option>
+                                            <option value="5:00pm">5:00pm</option>
+                                            <option value="6:00pm">6:00pm</option>
+                                            <option value="7:00pm">7:00pm</option>
+                                            <option value="8:00pm">8:00pm</option>
+                                            <option value="9:00pm">9:00pm</option>
+                                        </select>
+
+                                        <br>
+
+                                        <label name="ocho" class="mt-4 w-100 fs-5 pb-4" style="font-family: 'EB Garamond', serif;"> <strong>Presio a pagar $ 25.000</strong></label>
+
+                                    </form>
+
+
+                                </div>
+                                <div class=" fut modal-footer">
+                                    <button type="button" class="bot p-2 fs-5 text-white " onclick="add('formulario_limpieza')">ENVIAR!</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a class="but p-2 text-white " data-bs-toggle="modal" href="#exampleModalToggle6" role="button">RESERVAR</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!----------------footer---------------->
+
+    <!-- footer -->
+    <footer class="text-center text-white fot-1 ">
+        <!-- Grid container -->
+        <div class="container pt-4 ">
+            <!-- Section: Social media -->
+            <section class="mb-4 ">
+                <!-- Facebook -->
+                <a class="btn btn-link btn-floating btn-lg text-white m-1 " href="#! " role="button " data-mdb-ripple-color="dark "><i class="fab fa-facebook-f fs-2 "></i
+              ></a>
+                <!-- Instagram -->
+                <a class="btn btn-link btn-floating btn-lg text-white m-1 " href="#! " role="button " data-mdb-ripple-color="dark "><i class="fab fa-instagram fs-2 "></i
+              ></a>
+                <!-- Linkedin -->
+                <a class="btn btn-link btn-floating btn-lg text-white m-1 " href="#! " role="button " data-mdb-ripple-color="dark "><i class="fa-brands fa-whatsapp fs-2 "></i></a>
+            </section>
+            <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center text-white p-3 fot-2 ">
+            © 2022
+            <a class="text-white " href="#inicio ">Barberia Urban Style</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+</body>
+
+</html>
+
+<script src="bootstrap-5.2.0-dist/js/bootstrap.bundle.js"></script>
+<script>
+    function add(id) {
+
+        let uno = document.forms[id]["uno"].value;
+        let dos = document.forms[id]["dos"].value;
+        let tres = document.forms[id]["tres"].value;
+        let cuatro = document.forms[id]["cuatro"].value;
+        let cinco = document.forms[id]["cinco"].value;
+        let seis = document.forms[id]["seis"].value;
+        let siete = document.forms[id]["siete"].value;
+
+        let txt = " el servicio de  " + uno + " del cliente " + dos + " numero de teléfono " + tres + " para la fecha " + cuatro + " " + cinco + " " + seis + " a las " + siete;
+
+
+        let wame = "https://wa.me/573012239913?text=Hola! quiero confirmar:%0A ";
+
+        wame += txt;
+        // alert("te contactaremos con un asesor comercial via wa");
+        window.open(wame);
+    }
+</script>

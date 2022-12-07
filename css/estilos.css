@@ -1,0 +1,148 @@
+@import url('https://fonts.cdnfonts.com/css/made-sunflower');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&display=swap');
+
+/* font-family: 'EB Garamond', serif; */
+
+hr {
+    opacity: 100%;
+    color: var(--azul);
+    border: 2px solid;
+}
+
+:root {
+    --rojo: #A62E2E;
+    --azul: #1e2759;
+    --gris_oscuro: #8C888C;
+    --gris_claro: #D9D9D9;
+    --blanco: rgb(255, 255, 255);
+    --negro: #000000;
+}
+
+body {
+    /* background-color: #D9D9D9; */
+    background-color: var(--gris_claro);
+}
+
+h2,
+h3 {
+    font-family: 'MADE Sunflower', sans-serif;
+    color: var(--rojo);
+}
+
+
+/*-----------BARRA_NAV-----------*/
+
+nav {
+    background-color: var(--rojo);
+}
+
+nav ul {
+    margin-left: 5%;
+}
+
+nav li a {
+    font-family: 'MADE Sunflower', sans-serif;
+}
+
+
+/*----------servicios----------*/
+
+.tre img {
+    height: 300px;
+    object-fit: cover;
+    border: #1e2759 solid 5px;
+    box-shadow: #000000 8px 8px 20px;
+}
+
+.tre h4,
+p {
+    text-align: left;
+    font-family: 'EB Garamond', serif;
+}
+
+#servicios .res a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3em;
+}
+
+#servicios .res button {
+    background-color: #A62E2E;
+    border-radius: 15px;
+    box-shadow: #000000 2px 2px 2px;
+    transition: .5s;
+    border: none;
+}
+
+#servicios .res button:hover {
+    transform: scale(1.4);
+}
+
+
+/*-----------------galeria-----------------*/
+
+#galeria span {
+    background-color: #0000007d;
+}
+
+.card {
+    background-color: #D9D9D9;
+    border: none;
+}
+
+.card img {
+    border-radius: 10px;
+    border: 5px var(--azul) solid;
+    box-shadow: var(--negro) 4px 4px 10px;
+}
+
+
+/*----------------barberos----------------*/
+
+.do img {
+    height: 300px;
+    object-fit: cover;
+    border: #1e2759 solid 5px;
+    /* border-radius: 10px; */
+    box-shadow: #000000 8px 8px 20px;
+}
+
+.do h4,
+p {
+    text-align: left;
+    font-family: 'EB Garamond', serif;
+    margin-top: 20px;
+}
+
+
+/*-------------------video-------------------*/
+
+.vid {
+    background-color: var(--negro);
+    box-shadow: #000000 8px 8px 20px;
+}
+
+
+/*------------------footer------------------*/
+
+.fot-1 {
+    background-color: #1e2759;
+}
+
+.fot-2 {
+    background-color: #A62E2E;
+}
+
+
+/*---------------ubicación---------------*/
+
+.map iframe {
+    border-radius: 10px;
+    box-shadow: #000000 8px 8px 20px;
+}
+
+
+/* #ubicacion {
+    background-image: url(../Imagenes/fondo-ubica.jpg);
+    background-repeat: no-repeat;
+} */
